@@ -6,19 +6,19 @@ namespace Back_End.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class ExampleController : Controller
+public class FirstController : Controller
 {
-    private readonly IExample _example;
+    private readonly IFirst _first;
 
-    public ExampleController(IExample example)
+    public FirstController(IFirst first)
     {
-        _example = example;
+        _first = first;
     }
 
     [HttpGet("get-all-managers")]
     public async Task<IActionResult> getAllManagers()
     {
-        var result = await _example.getAllManagers();
+        var result = await _first.getAllManagers();
         return Ok(result);
     }
 }

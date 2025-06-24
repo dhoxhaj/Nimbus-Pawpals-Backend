@@ -32,7 +32,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IExample, ExampleService>();
+builder.Services.AddScoped<IFirst, FirstService>();
 builder.Services.AddScoped<IStaffService, StaffService>();
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<IPetService, PetService>();

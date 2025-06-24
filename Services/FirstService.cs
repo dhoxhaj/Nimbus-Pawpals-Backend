@@ -5,16 +5,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Back_End.Services;
 
-public class ExampleService : IExample
+public class FirstService : IFirst
 {
     private readonly PawPalsDbContext _context;
 
-    public ExampleService(PawPalsDbContext context)
+    public FirstService(PawPalsDbContext context)
     {
         _context = context;
     }
     
-    // Method to get all the managers - Example
+   
     public async Task<List<Manager>> getAllManagers()
     {
         return await _context.Managers.ToListAsync();
