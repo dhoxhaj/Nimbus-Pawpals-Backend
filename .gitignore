@@ -1,4 +1,4 @@
-# Ignore build and IDE-specific files
+
 bin/
 obj/
 .idea/
@@ -7,7 +7,7 @@ obj/
 .vs/
 *.user
 
-# Ignore specific build output directories
+
 bin/Debug/net9.0/
 bin/Debug/
 net9.0/
